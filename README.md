@@ -1,6 +1,6 @@
 # unicheck-corp-php-sdk
 
-[![Packagist](https://img.shields.io/packagist/v/unicheck/unicheck-php-sdk.svg?style=flat-square)](https://packagist.org/packages/unicheck/unicheck-php-sdk)
+[![Packagist](https://img.shields.io/packagist/v/unicheck/unicheck-corp-php-sdk.svg?style=flat-square)](https://packagist.org/packages/unicheck/unicheck-corp-php-sdk)
 
 PHP SDK for Unicheck.com corporate API 2.0+.  
 SDK implements API methods in PHP OOP way.
