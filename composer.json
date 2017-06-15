@@ -1,0 +1,25 @@
+{
+	"name": "unicheck/unicheck-corp-php-sdk",
+	"description": "An SDK built to facilitate application development for Unicheck Corporate API 2.0+ (ex Unplag)",
+	"minimum-stability": "stable",
+	"license": "MIT",
+	"keywords": [
+		"Unicheck",
+		"plagiarism",
+        "plagcheck",
+		"sdk",
+		"php"
+	],
+	"homepage": "https://corpapi.unicheck.com/api/doc/",
+	"require": {
+		"php": ">=5.5.0",
+		"guzzlehttp/guzzle": "^6.2.2",
+		"rybakit/msgpack": "^0.2.1",
+		"guzzlehttp/oauth-subscriber": "^0.3.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Unicheck\\": "src/Unicheck"
+		}
+	}
+}
