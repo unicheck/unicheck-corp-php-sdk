@@ -1,13 +1,12 @@
-# unicheck-crop-php-sdk
+# unicheck-corp-php-sdk
 
-[![Packagist](https://img.shields.io/packagist/v/unplag/unplag-php-sdk.svg?style=flat-square)](https://packagist.org/packages/unplag/unplag-php-sdk)
+[![Packagist](https://img.shields.io/packagist/v/unicheck/unicheck-php-sdk.svg?style=flat-square)](https://packagist.org/packages/unicheck/unicheck-php-sdk)
 
 PHP SDK for Unicheck.com corporate API 2.0+.  
 SDK implements API methods in PHP OOP way.
 
 ## Installation
 #### Using composer
-Package is not submitted to packagist.org, so you should add github repo to composer config
 ```bash
 #Require Unicheck sdk
 php composer.phar require unicheck/unicheck-corp-php-sdk
