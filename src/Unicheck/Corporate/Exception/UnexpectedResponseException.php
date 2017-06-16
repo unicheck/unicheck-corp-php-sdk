@@ -1,11 +1,11 @@
-<?php namespace Unicheck\Exception;
+<?php namespace Unicheck\Corporate\Exception;
 
 
-use Unicheck\Response;
+use Unicheck\Corporate\Response;
 
 /**
  * Class UnexpectedResponseException
- * @package Unicheck\Exception
+ * @package Unicheck\Corporate\Exception
  */
 class UnexpectedResponseException extends \Exception implements UnicheckException
 {

@@ -1,11 +1,11 @@
-<?php namespace Unicheck;
+<?php namespace Unicheck\Corporate;
 
 
-use Unicheck\Exception\PayloadException;
+use Unicheck\Corporate\Exception\PayloadException;
 
 /**
  * Class PayloadFile
- * @package Unicheck
+ * @package Unicheck\Corporate
  */
 class PayloadFile
 {
@@ -128,6 +128,8 @@ class PayloadFile
 
 				return $data;
 		}
+
+		return null;
 	}
 
 

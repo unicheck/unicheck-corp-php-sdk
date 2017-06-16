@@ -1,11 +1,10 @@
-<?php namespace Unicheck;
+<?php namespace Unicheck\Corporate;
 
 
-use Unicheck\Check\CheckParam;
-use Unicheck\Exception\ApiException;
-use Unicheck\Client\CallbackTrait;
-use Unicheck\Client\Client as IClient;
-use Unicheck\Exception\UnexpectedResponseException;
+use Unicheck\Corporate\Check\CheckParam;
+use Unicheck\Corporate\Client\CallbackTrait;
+use Unicheck\Corporate\Client\Client as IClient;
+use Unicheck\Corporate\Exception\UnexpectedResponseException;
 
 /**
  * Class Unicheck

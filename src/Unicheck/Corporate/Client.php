@@ -1,16 +1,16 @@
-<?php namespace Unicheck;
+<?php namespace Unicheck\Corporate;
 
 
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Subscriber\Oauth\Oauth1;
 use Psr\Http\Message\ResponseInterface;
-use Unicheck\Exception\ApiException;
-use Unicheck\Exception\RequestException;
-use Unicheck\Exception\ResponseException;
+use Unicheck\Corporate\Exception\ApiException;
+use Unicheck\Corporate\Exception\RequestException;
+use Unicheck\Corporate\Exception\ResponseException;
 
 /**
  * Class Client
- * @package Unicheck
+ * @package Unicheck\Corporate
  */
 class Client
 {

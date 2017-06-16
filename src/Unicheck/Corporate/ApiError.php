@@ -1,9 +1,9 @@
-<?php namespace Unicheck;
+<?php namespace Unicheck\Corporate;
 
 
 /**
  * Class ApiError
- * @package Unicheck
+ * @package Unicheck\Corporate
  */
 class ApiError
 {

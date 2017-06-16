@@ -1,10 +1,10 @@
-<?php namespace Unicheck\Exception;
+<?php namespace Unicheck\Corporate\Exception;
 
-use Unicheck\Request;
+use Unicheck\Corporate\Request;
 
 /**
  * Class RequestException
- * @package Unicheck\Exception
+ * @package Unicheck\Corporate\Exception
  */
 class RequestException extends \Exception implements UnicheckException
 {

@@ -14,20 +14,19 @@ php composer.phar require unicheck/unicheck-corp-php-sdk
 
 ## Usage
 ```php
-require_once 'vendor/autoload.php';
-
-
 //create Unicheck client
-$unicheck = new Unicheck\Unicheck('YOUR-API-KEY', 'YOUR-API-SECRET');
+$unicheck = new Unicheck('YOUR-API-KEY', 'YOUR-API-SECRET');
 
 //upload file
-$file = $unicheck->fileUpload(\Unicheck\PayloadFile::bin($testText), 'txt');
+$file = $unicheck->fileUpload(PayloadFile::bin($testText), 'txt');
 
 //start check
-$checkParam = new \Unicheck\Check\CheckParam($file['id']);
-$checkParam->setType(\Unicheck\Check\CheckParam::TYPE_WEB);
+$checkParam = new CheckParam($file['id']);
+$checkParam->setType(CheckParam::TYPE_WEB);
+
 $check = $unicheck->checkCreate($checkParam);
 
+echo 'Check started!' . PHP_EOL;
 var_dump($check);
 ```
 

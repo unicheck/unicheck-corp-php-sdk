@@ -2,9 +2,13 @@
 
 require_once 'vendor/autoload.php';
 
+use Unicheck\Corporate\Unicheck;
+use Unicheck\Corporate\PayloadFile;
+use Unicheck\Corporate\Exception\UnicheckException;
+use Unicheck\Corporate\Check\CheckParam;
 
 //create Unicheck client
-$unicheck = new Unicheck\Unicheck('YOUR-API-KEY', 'YOUR-API-SECRET');
+$unicheck = new Unicheck('YOUR-API-KEY', 'YOUR-API-SECRET');
 
 
 //upload file
@@ -17,9 +21,9 @@ EOF;
 
 try
 {
-	$file = $unicheck->fileUpload(\Unicheck\PayloadFile::bin($testText), 'txt');
+	$file = $unicheck->fileUpload(PayloadFile::bin($testText), 'txt');
 }
-catch (Unicheck\Exception\UnicheckException $e)
+catch (UnicheckException $e)
 {
 	echo $e;
 	die('File upload error: ' . $e->getMessage() . PHP_EOL);
@@ -29,14 +33,14 @@ echo 'File uploaded!' . PHP_EOL;
 var_dump($file);
 
 //start check
-$checkParam = new \Unicheck\Check\CheckParam($file['id']);
-$checkParam->setType(\Unicheck\Check\CheckParam::TYPE_WEB);
+$checkParam = new CheckParam($file['id']);
+$checkParam->setType(CheckParam::TYPE_WEB);
 
 try
 {
 	$check = $unicheck->checkCreate($checkParam);
 }
-catch (\Unicheck\Exception\UnicheckException $e)
+catch (UnicheckException $e)
 {
 	die('Check start fail: ' . $e->getMessage() . PHP_EOL);
 }

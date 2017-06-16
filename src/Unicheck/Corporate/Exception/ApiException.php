@@ -1,12 +1,12 @@
-<?php namespace Unicheck\Exception;
+<?php namespace Unicheck\Corporate\Exception;
 
-use Unicheck\ApiError;
-use Unicheck\Request;
-use Unicheck\Response;
+use Unicheck\Corporate\ApiError;
+use Unicheck\Corporate\Request;
+use Unicheck\Corporate\Response;
 
 /**
  * Class ApiException
- * @package Unicheck\Exception
+ * @package Unicheck\Corporate\Exception
  */
 class ApiException extends \Exception implements UnicheckException
 {
@@ -83,7 +83,7 @@ class ApiException extends \Exception implements UnicheckException
     /**
      * Method getErrors description.
      *
-     * @return \Unicheck\ApiError[]
+     * @return \Unicheck\Corporate\ApiError[]
      */
     public function getErrors()
     {

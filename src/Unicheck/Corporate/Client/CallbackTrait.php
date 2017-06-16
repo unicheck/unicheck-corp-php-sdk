@@ -1,15 +1,15 @@
-<?php namespace Unicheck\Client;
+<?php namespace Unicheck\Corporate\Client;
 
-use Unicheck\Client;
-use Unicheck\Request;
-use Unicheck\Response;
-use Unicheck\Exception\CallbackException;
+use Unicheck\Corporate\Client;
+use Unicheck\Corporate\Request;
+use Unicheck\Corporate\Response;
+use Unicheck\Corporate\Exception\CallbackException;
 
 use \MessagePack\Unpacker;
 
 /**
  * Class CallbackTrait
- * @package Unicheck\Client
+ * @package Unicheck\Corporate\Client
  *
  * @method Response execute(Request $request)
  * @method Client getClient()

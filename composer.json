@@ -19,7 +19,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Unicheck\\": "src/Unicheck"
+			"Unicheck\\Corporate\\": "src/Unicheck/Corporate/"
 		}
 	}
 }

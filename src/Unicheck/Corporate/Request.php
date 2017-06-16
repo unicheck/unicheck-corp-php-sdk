@@ -1,12 +1,11 @@
-<?php namespace Unicheck;
-
+<?php namespace Unicheck\Corporate;
 
 use GuzzleHttp\Psr7\Uri;
-use Unicheck\Exception\UnicheckException;
+use MessagePack\Packer;
 
 /**
  * Class Request
- * @package Unicheck
+ * @package Unicheck\Corporate
  */
 class Request
 {
@@ -87,7 +86,7 @@ class Request
 	 */
 	protected function packPayload()
 	{
-		$packer = new \MessagePack\Packer;
+		$packer = new Packer;
 
 		$data = [];
 		foreach($this->payload as $key => &$value)

@@ -1,11 +1,11 @@
-<?php namespace Unicheck\Client;
+<?php namespace Unicheck\Corporate\Client;
 
-use Unicheck\Request;
-use Unicheck\Response;
+use Unicheck\Corporate\Request;
+use Unicheck\Corporate\Response;
 
 /**
  * Interface Client
- * @package Unicheck\Client
+ * @package Unicheck\Corporate\Client
  */
 interface Client
 {

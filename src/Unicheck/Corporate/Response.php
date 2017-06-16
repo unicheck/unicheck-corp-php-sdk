@@ -1,13 +1,14 @@
-<?php namespace Unicheck;
+<?php namespace Unicheck\Corporate;
 
 
+use MessagePack\Unpacker;
 use Psr\Http\Message\ResponseInterface;
-use Unicheck\Exception\UnexpectedResponseException;
+use Unicheck\Corporate\Exception\UnexpectedResponseException;
 
 
 /**
  * Class Response
- * @package Unicheck
+ * @package Unicheck\Corporate
  */
 class Response
 {
@@ -29,7 +30,7 @@ class Response
 			throw new \InvalidArgumentException("Invalid content type received from Unicheck API");
 		}
 
-		$unpacker = new \MessagePack\Unpacker();
+		$unpacker = new Unpacker();
 		$this->_data = $unpacker->unpack($guzzle_response->getBody()->getContents());
 		$this->_guzzle_resp = $guzzle_response;
 	}

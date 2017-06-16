@@ -1,5 +1,6 @@
-<?php namespace Unicheck\Check;
-use Unicheck\Exception\CheckException;
+<?php namespace Unicheck\Corporate\Check;
+
+use Unicheck\Corporate\Exception\CheckException;
 
 /**
  * Class CheckParam
