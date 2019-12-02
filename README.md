@@ -1,6 +1,7 @@
 # unicheck-corp-php-sdk
 
 [![Packagist](https://img.shields.io/packagist/v/unicheck/unicheck-corp-php-sdk.svg?style=flat-square)](https://packagist.org/packages/unicheck/unicheck-corp-php-sdk)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Funicheck%2Funicheck-corp-php-sdk.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Funicheck%2Funicheck-corp-php-sdk?ref=badge_shield)
 
 PHP SDK for Unicheck.com corporate API 2.0+.  
 SDK implements API methods in PHP OOP way.
@@ -33,3 +34,6 @@ var_dump($check);
 ## Help and docs
 
 - [Unicheck API Documentation](https://corpapi.unicheck.com/api/doc)
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Funicheck%2Funicheck-corp-php-sdk.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Funicheck%2Funicheck-corp-php-sdk?ref=badge_large)
