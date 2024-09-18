@@ -1,3 +1,5 @@
+# [DEPRECATED] This project has reached the end of its development
+
 # unicheck-corp-php-sdk
 
 [![Packagist](https://img.shields.io/packagist/v/unicheck/unicheck-corp-php-sdk.svg?style=flat-square)](https://packagist.org/packages/unicheck/unicheck-corp-php-sdk)
