@@ -14,7 +14,7 @@
 	"require": {
 		"php": ">=5.5.0",
 		"guzzlehttp/guzzle": "^6.2.2",
-		"rybakit/msgpack": "^0.2.1",
+		"rybakit/msgpack": "^0.8.0",
 		"guzzlehttp/oauth-subscriber": "^0.3.0"
 	},
 	"autoload": {
